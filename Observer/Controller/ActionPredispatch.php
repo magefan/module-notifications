@@ -87,15 +87,13 @@ class ActionPredispatch implements \Magento\Framework\Event\ObserverInterface
             return; // It's ajax request
         }
 
-        $time = $this->date->gmtTimestamp();
-        if ($this->backendSession->getLastMfNtfCheck() > $time - self::TIMEOUT) {
-            return; // It's not time
+        if ($observer->getRequest()->getMethod() == 'POST') {
+            return; // It's post request
         }
 
         $this->checkCacheTypes();
         $this->checkReviews();
 
-        $this->backendSession->setLastMfNtfCheck($time);
     }
 
     /**
