@@ -3,7 +3,7 @@
 [![Total Downloads](https://poser.pugx.org/magefan/module-notifications/downloads)](https://packagist.org/packages/magefan/module-notifications)
 [![Latest Stable Version](https://poser.pugx.org/magefan/module-notifications/v/stable)](https://packagist.org/packages/magefan/module-notifications)
 
-This Magento 2 Notification module allows you to receive notifications in admin panel once review is pending for moderation or cache is disabled.
+This Magento 2 Notification module allows you to receive notifications in the admin panel once the review is pending for moderation or cache is disabled.
 
 ## Features
   * Disabled Cache notifications
